@@ -11,18 +11,23 @@ checkBtn.addEventListener('click', function () {
     'f@gmail.com',
   ]
 
-  for (let i = 0; i <= emailList.length - 1; i++) {
-    let email = document.createElement('div');
+  let match = false;
+  let i;
 
-    if (emailList[i].includes(emailValidator)) {
-      email.innerText = `Email Valida`
-    } else {
-      email.innerText = `Email Non valida, Si prega di Verificare`
-    }
-
-    document.querySelector('.commentContainer').appendChild(email);
-
-
+  for (i = 0; i <= emailList.length - 1; i++) {
+    if (emailValidator.includes(emailList[i])) {
+      match = true;
+    } else { }
   }
+
+  let email = document.createElement('div');
+
+  if (match == true) {
+    email.innerText = `Accesso Consentito`
+  } else {
+    email.innerText = `Accesso Negato, Si prega di Verificare`
+  }
+
+  document.querySelector('.commentContainer').appendChild(email);
 }
 )
