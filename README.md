@@ -19,4 +19,4 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 
 ## Bonus
 1. Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
-2.   Grafica per il gioco dei dadi.
+2. Grafica per il gioco dei dadi
