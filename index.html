@@ -27,14 +27,40 @@
         placeholder="your email address">
       <div id="emailHelp" class="form-text"></div>
       <div class="commentContainer"></div>
-    </div>
-    <button class="btn btn-primary mx-auto checkButton">Check</button>
-    <a href="index.html"><button class="btn btn-primary mx-auto checkButton" type="reset"
-        value="Reset">Reset</button></a>
-  </div>
+      <div class="py-2">
+        <button class="btn btn-primary mx-auto checkButton">Check</button>
+        <a href="index.html"><button class="btn btn-primary mx-auto checkButton" type="reset"
+            value="Reset">Reset</button></a>
+      </div>
+      <div>
+        <h1 class="my-4">Let's Play</h1>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
+        <div class="dice">
+          <p class="Player1">Player 1</p>
+          <img class="img1" src="img/dice6.png">
+        </div>
+
+        <div class="dice">
+          <p class="Player2">Player 2</p>
+          <img class="img2" src="img/dice6.png">
+        </div>
+      </div>
+
+      <div class="my-5">
+        <button type="button" class="butn" onClick="rollTheDice()">
+          Roll the Dice
+        </button>
+      </div>
+      <div>
+        <button type="button" class="butn" onClick="editNames()">
+          Edit Names
+        </button>
+      </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
